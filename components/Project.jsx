@@ -8,6 +8,7 @@ const projects = [
         description: 'Multiplatform mobile application built using Flutter and Firebase. The main idea behind the app is about users volunteering for different causes and also read news regarding subjects in relation with volunteering',
         link: 'https://github.com/navfran98/Multiplataforma_TP',
         image: "/assets/ser_manos.png",
+        isGithub: true,
         tags: ['Flutter', 'Dart', 'Firebase']
     },
     {
@@ -15,6 +16,7 @@ const projects = [
         description: 'Program that implements the cryptographic idea of "share secret" between .bmp images. It hide an image inside other and also bring back and image from other images.',
         link: 'https://github.com/navfran98/esteganografia',
         image: "/assets/steganography.jpg",
+        isGithub: true,
         tags: ['C', 'Makefile']
     },
     {
@@ -22,6 +24,7 @@ const projects = [
         description: 'Three AI projects: A search method for the game Fillzone; a genetic algorithm that represents an image with a map of ASCII character; a simple multilayer perceptron algorithm which is train with different situations and then test its learning.',
         link: 'https://github.com/navfran98?tab=repositories&q=sia',
         image: "/assets/ai.png",
+        isGithub: true,
         tags: ["Python", "Jupyter Notebook"]
     },
     {
@@ -29,6 +32,7 @@ const projects = [
         description: 'Two DS projects: A remote thread-safe system to manage airplane seats while offering reports; a console app that implements the MapReduce model from HazelCast to process data coming from pedestrian sensors.',
         link: 'https://github.com/navfran98?tab=repositories&q=pd',
         image: "/assets/ds.png",
+        isGithub: true,
         tags: ['Java', 'Bash', 'Maven', 'HazelCast']
     },
     {
@@ -36,7 +40,8 @@ const projects = [
         description: 'Webapp that connects people that want to travel in a cheap way, and people who offer their acomodations in exchange for some help or work they need.',
         link: 'https://github.com/navfran98/esteganografia',
         image: "/assets/steganography.jpg",
-        tags: ['Java', 'Maven', 'Spring Framework', 'Hibernate', 'PostgreSQL']
+        isGithub: false,
+        tags: ['Java', 'Maven', 'Spring', 'Hibernate', 'PostgreSQL', 'Vue.js', 'Javascript']
     }
 ]
 
@@ -53,7 +58,7 @@ const Project = () => {
                             <div className="p-4 flex flex-col justify-center">
                                 <h2 className="h2">{project.title}</h2>
                                 <p className="mt-2">{project.description}</p>
-                                <Tags tags={project.tags}/>
+                                <Tags tags={project.tags} isGithub={project.isGithub} link={project.link}/>
                             </div>
                         </div>
             })}
