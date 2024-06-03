@@ -9,7 +9,7 @@ const socials = [
 const Social = ({containerStyles, iconStyles}) => {
     return (<div className={containerStyles}>
         {socials.map((item, index) => {
-            return (<Link key={index} href={item.path} className={iconStyles}>{item.icon}</Link>)
+            return (<Link target="_blank" key={index} href={item.path} className={iconStyles}>{item.icon}</Link>)
         })}
     </div>)
 }
