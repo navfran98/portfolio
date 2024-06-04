@@ -66,7 +66,7 @@ const skills = [
 
 const SkillGrid = () => {
     return (
-        <div className="grid grid-flow-rows grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8 mx-5 sm:mx-20 my-10">
+        <div className="grid grid-flow-rows grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8 mx-10 sm:mx-20 xl:mx-30 my-10">
             {skills.map((skill, index) => {
                 return (
                     <div key={index} className="border rounded-2xl border-accent px-2 py-5">
